@@ -30,6 +30,8 @@ function sign(method: string, params: any = {}, config: AlipaySdkConfig): any {
     method,
     appId: config.appId,
     charset: config.charset,
+    appCertSn: config.appCertSn,
+    alipayRootCertSn: config.alipayRootCertSn,
     version: config.version,
     signType: config.signType,
     timestamp: moment().format('YYYY-MM-DD HH:mm:ss'),
